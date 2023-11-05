@@ -1,7 +1,11 @@
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 export default function Service() {
     return (
         <>
-            <h1>Service Page</h1>
+            <Header />
+            <Footer />
         </>
     )
 }

@@ -1,7 +1,11 @@
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 export default function Contact() {
     return (
         <>
-            <h1>Contact Page</h1>
+            <Header />
+            <Footer />
         </>
     )
 }

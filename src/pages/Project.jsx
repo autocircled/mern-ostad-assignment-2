@@ -1,7 +1,11 @@
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 export default function Project() {
     return (
         <>
-            <h1>Project Page</h1>
+            <Header />
+            <Footer />
         </>
     )
 }

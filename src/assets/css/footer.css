@@ -1,0 +1,13 @@
+p.copyright {
+    margin: 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
