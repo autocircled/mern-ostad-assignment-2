@@ -1,0 +1,18 @@
+section.hero {
+    position: relative;
+    background-image: url("../images/hero.jpg");
+    background-position-x: center;
+    background-position-y: top;
+    height: calc(100vh - 56px);
+}
+
+.hero-overlay {
+    position: absolute;
+    background-color: #00000030;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(9px);
+    opacity: 1;
+}
