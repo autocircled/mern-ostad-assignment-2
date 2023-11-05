@@ -22,7 +22,7 @@ export default function Project() {
     return (
         <>
             {projects.length > 0 ? (
-                <section id="projects" className="projects">
+                <section className="section projects">
                     <div className="center">
                         <h2>Our Projects</h2>
                         <div className="project-container">

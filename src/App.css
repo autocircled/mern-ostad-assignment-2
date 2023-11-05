@@ -54,7 +54,12 @@ footer {
   background-color: #f4f4f4;
   color: #213547;
   padding: 10px 0;
-  margin-top: 20px;
+  margin-top: 65px;
+}
+
+footer p {
+  margin: 0;
+  line-height: 3rem;
 }
 
 .center {
@@ -73,13 +78,9 @@ footer {
   opacity: 0.7;
 }
 
-.btn {
-  display: inline-block;
-  line-height: 30px;
-  background: #fff;
-  padding: 5px 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
+.section {
+  position: relative;
+  padding: 65px 0 0;
 }
 
 .hero-content {

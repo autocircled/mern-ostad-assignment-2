@@ -1,23 +1,21 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Service from './components/Service'
-import Project from './components/Project'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+import { Home, About, Project, Service, Contact, Blog } from './pages'
 
 function App() {
 
   return (
     <>
-      <div className='wrapper'>
-        <Header />
-        <Hero />
-        <About />
-        <Service />
-        <Project />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

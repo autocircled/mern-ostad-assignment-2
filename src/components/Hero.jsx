@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className="hero-content center">
                     <h2>Discover the Magic</h2>
                     <p>Explore a world of endless possibilities.</p>
-                    <a className="btn" href="#about">Learn More</a>
+                    <a className="btn btn-light" href="#about">Learn More</a>
                 </div>
             </div>
         </>
