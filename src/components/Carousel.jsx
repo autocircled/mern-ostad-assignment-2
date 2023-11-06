@@ -20,7 +20,7 @@ function Carousel() {
     ];
 
     return (
-        <section className="carousel">
+        <section className="carousel py-5">
             <div className="container">
                 <h2 className="text-center">Featured Projects</h2>
                 <div className="row">
