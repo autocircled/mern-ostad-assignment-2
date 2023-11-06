@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Skills() {
     // Sample skills data (you can replace this with your own skillset)
     const skills = [
@@ -51,7 +53,13 @@ function SkillsWithProgress({ skills }) {
     );
 }
 
-// export default SkillsWithProgress;
-
+SkillsWithProgress.propTypes = {
+    skills: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            progress: PropTypes.number.isRequired
+        })
+    ).isRequired
+};
 
 export default Skills;
