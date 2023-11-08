@@ -1,7 +1,6 @@
 import google from '../assets/images/google.png'
 import upcity from '../assets/images/upcity.png'
 import clutch from '../assets/images/clutch.png'
-import '../assets/css/reviews.css'
 
 export default function Reviews() {
     return (
