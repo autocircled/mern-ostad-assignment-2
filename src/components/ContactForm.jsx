@@ -1,5 +1,4 @@
-// ContactForm.js
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -10,6 +9,7 @@ function ContactForm() {
     });
 
     const [submitted, setSubmitted] = useState(false);
+    const formRef = useRef(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -21,17 +21,16 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add code to handle form submission, e.g., sending data to a server
         setSubmitted(true);
     };
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
+        formRef.current = setTimeout(() => {
             setSubmitted(false);
         }, 3000);
 
         return () => {
-            clearTimeout(timeout);
+            clearTimeout(formRef.current);
         };
     }, [submitted]);
 
@@ -84,7 +83,7 @@ function ContactForm() {
                     />
                 </div>
                 <button type="submit" className="btn btn-primary">Send Message</button>
-                {submitted ? ( // Display success message when submitted is true
+                {submitted ? (
                     <span className="alert alert-success mb-3 ms-3">Form submitted successfully!</span>
                 ) : null}
             </form>

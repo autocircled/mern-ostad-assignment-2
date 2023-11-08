@@ -1,8 +1,14 @@
-# React + Vite
+# Module 13 Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As per instructions from our Module 13 assignment,
+- I have created 6 pages
+    - Home
+    - About
+    - Blog
+    - Service
+    - Project
+    - Contact
+- Each Pages have minimum 4 unique components
+- I have used `useRef, useState,  useEffect` in the `Contact` page
+- `React Router Dom` and `NavLink` have been used in the `App.jsx` and `Header` component.
+- I have tried to make it looks beautiful with Bootstrap.
